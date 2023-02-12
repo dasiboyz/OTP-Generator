@@ -5,7 +5,7 @@ Open VS code
 open Terminal and type this code 
 <pre> $pip install random2</pre>
 Then install random in code
-Type this code
+# Type this code for 4 digit
 <pre>
 # import library
 import math, random
@@ -31,6 +31,59 @@ if __name__ == "__main__" :
 	print("Your One Time Password is:", generateOTP())
 
 </pre>
+
+# Type this code for 6 digit
+<pre>
+# import library
+import math, random
+
+# function to generate OTP
+def generateOTP() :
+
+	# Declare a string variable
+	# which stores all string
+	string = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
+	OTP = ""
+	length = len(string)
+	for i in range(6) :
+		OTP += string[math.floor(random.random() * length)]
+
+	return OTP
+
+# Driver code
+if __name__ == "__main__" :
+	
+	print("OTP of length 6:", generateOTP())
+
+</pre>
+
+# Type this code for generate strong Password
+
+<pre>
+# import library
+import math, random
+
+# function to generate OTP
+def generateOTP() :
+
+	# Declare a string variable
+	# which stores all string
+	string = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
+	OTP = ""
+	length = len(string)
+	for i in range(6) :
+		OTP += string[math.floor(random.random() * length)]
+
+	return OTP
+
+# Driver code
+if __name__ == "__main__" :
+	
+	print("OTP of length 6:", generateOTP())
+
+
+</pre>
+
 Then copy this code -
 
 ![code](https://user-images.githubusercontent.com/90886082/218302252-20080cce-1b5d-436c-a47a-efe41e0b0366.png)
