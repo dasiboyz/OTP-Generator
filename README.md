@@ -6,18 +6,31 @@ open Terminal and type this code
 <pre> $pip install random2</pre>
 Then install random in code
 Type this code
-<pre>import random
-<span>import string</span>
-<span>def rand_pass(size):</span>
-<span>    generate_pass=''.join([random.choice(string.ascii_uppercase +
-                                        string.ascii_lowercase +
-                                        string.digits)
-                                        for n in range(size)])
+<pre>
+# import library
+import math, random
 
-return generate_pass
-                                               
+# function to generate OTP
+def generateOTP() :
+
+	# Declare a digits variable
+	# which stores all digits
+	digits = "0123456789"
+	OTP = ""
+
+# length of password can be changed
+# by changing value in range
+	for i in range(4) :
+		OTP += digits[math.floor(random.random() * 10)]
+
+	return OTP
+
+# Driver code
+if __name__ == "__main__" :
+	
+	print("Your One Time Password is:", generateOTP())
+
 </pre>
-
 Then copy this code -
 
 ![code](https://user-images.githubusercontent.com/90886082/218302252-20080cce-1b5d-436c-a47a-efe41e0b0366.png)
