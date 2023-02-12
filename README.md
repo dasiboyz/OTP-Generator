@@ -35,6 +35,10 @@ Then copy this code -
 
 ![code](https://user-images.githubusercontent.com/90886082/218302252-20080cce-1b5d-436c-a47a-efe41e0b0366.png)
 
+# open Terminal
+
 ![command 2](https://user-images.githubusercontent.com/90886082/218302257-d05a2150-85dc-4983-af12-9fc98873a254.png)
+
+# Run command to generate OTP
 
 ![terminal](https://user-images.githubusercontent.com/90886082/218302259-9c717c87-443b-46b1-aabd-e335cf4293e1.png)
